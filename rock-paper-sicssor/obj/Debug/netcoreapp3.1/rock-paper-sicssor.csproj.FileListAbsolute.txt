@@ -1,0 +1,16 @@
+C:\Users\purna.annapureddy\source\repos\rock-paper-sicssor\rock-paper-sicssor\bin\Debug\netcoreapp3.1\rock-paper-sicssor.exe
+C:\Users\purna.annapureddy\source\repos\rock-paper-sicssor\rock-paper-sicssor\bin\Debug\netcoreapp3.1\rock-paper-sicssor.deps.json
+C:\Users\purna.annapureddy\source\repos\rock-paper-sicssor\rock-paper-sicssor\bin\Debug\netcoreapp3.1\rock-paper-sicssor.runtimeconfig.json
+C:\Users\purna.annapureddy\source\repos\rock-paper-sicssor\rock-paper-sicssor\bin\Debug\netcoreapp3.1\rock-paper-sicssor.runtimeconfig.dev.json
+C:\Users\purna.annapureddy\source\repos\rock-paper-sicssor\rock-paper-sicssor\bin\Debug\netcoreapp3.1\rock-paper-sicssor.dll
+C:\Users\purna.annapureddy\source\repos\rock-paper-sicssor\rock-paper-sicssor\bin\Debug\netcoreapp3.1\rock-paper-sicssor.pdb
+C:\Users\purna.annapureddy\source\repos\rock-paper-sicssor\rock-paper-sicssor\obj\Debug\netcoreapp3.1\rock-paper-sicssor.csprojAssemblyReference.cache
+C:\Users\purna.annapureddy\source\repos\rock-paper-sicssor\rock-paper-sicssor\obj\Debug\netcoreapp3.1\rock_paper_sicssor.Form1.resources
+C:\Users\purna.annapureddy\source\repos\rock-paper-sicssor\rock-paper-sicssor\obj\Debug\netcoreapp3.1\rock_paper_sicssor.Properties.Resources.resources
+C:\Users\purna.annapureddy\source\repos\rock-paper-sicssor\rock-paper-sicssor\obj\Debug\netcoreapp3.1\rock-paper-sicssor.csproj.GenerateResource.cache
+C:\Users\purna.annapureddy\source\repos\rock-paper-sicssor\rock-paper-sicssor\obj\Debug\netcoreapp3.1\rock-paper-sicssor.AssemblyInfoInputs.cache
+C:\Users\purna.annapureddy\source\repos\rock-paper-sicssor\rock-paper-sicssor\obj\Debug\netcoreapp3.1\rock-paper-sicssor.AssemblyInfo.cs
+C:\Users\purna.annapureddy\source\repos\rock-paper-sicssor\rock-paper-sicssor\obj\Debug\netcoreapp3.1\rock-paper-sicssor.csproj.CoreCompileInputs.cache
+C:\Users\purna.annapureddy\source\repos\rock-paper-sicssor\rock-paper-sicssor\obj\Debug\netcoreapp3.1\rock-paper-sicssor.dll
+C:\Users\purna.annapureddy\source\repos\rock-paper-sicssor\rock-paper-sicssor\obj\Debug\netcoreapp3.1\rock-paper-sicssor.pdb
+C:\Users\purna.annapureddy\source\repos\rock-paper-sicssor\rock-paper-sicssor\obj\Debug\netcoreapp3.1\rock-paper-sicssor.genruntimeconfig.cache

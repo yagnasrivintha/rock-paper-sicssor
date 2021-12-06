@@ -37,13 +37,13 @@ namespace rock_paper_sicssor
             this.button5 = new System.Windows.Forms.Button();
             this.playerLbl = new System.Windows.Forms.Label();
             this.cpuLbl = new System.Windows.Forms.Label();
-            this.scoreLbl = new System.Windows.Forms.Label();
-            this.countDownLbl = new System.Windows.Forms.Label();
+            this.playerScoreLbl = new System.Windows.Forms.Label();
             this.roundLbl = new System.Windows.Forms.Label();
             this.winnerLbl = new System.Windows.Forms.Label();
             this.playerPicture = new System.Windows.Forms.PictureBox();
             this.cpuPicture = new System.Windows.Forms.PictureBox();
             this.countDownTimer = new System.Windows.Forms.Timer(this.components);
+            this.cpuScoreLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.playerPicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cpuPicture)).BeginInit();
             this.SuspendLayout();
@@ -102,7 +102,7 @@ namespace rock_paper_sicssor
             this.button5.TabIndex = 4;
             this.button5.Text = "Close Application";
             this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.button5.Click += new System.EventHandler(this.closeApplicationBtn_Click);
             // 
             // playerLbl
             // 
@@ -124,25 +124,15 @@ namespace rock_paper_sicssor
             this.cpuLbl.TabIndex = 6;
             this.cpuLbl.Text = "CPU";
             // 
-            // scoreLbl
+            // playerScoreLbl
             // 
-            this.scoreLbl.AutoSize = true;
-            this.scoreLbl.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.scoreLbl.Location = new System.Drawing.Point(366, 134);
-            this.scoreLbl.Name = "scoreLbl";
-            this.scoreLbl.Size = new System.Drawing.Size(166, 25);
-            this.scoreLbl.TabIndex = 6;
-            this.scoreLbl.Text = "Player: 0 - CPU: 0";
-            // 
-            // countDownLbl
-            // 
-            this.countDownLbl.AutoSize = true;
-            this.countDownLbl.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.countDownLbl.Location = new System.Drawing.Point(440, 202);
-            this.countDownLbl.Name = "countDownLbl";
-            this.countDownLbl.Size = new System.Drawing.Size(23, 25);
-            this.countDownLbl.TabIndex = 6;
-            this.countDownLbl.Text = "5";
+            this.playerScoreLbl.AutoSize = true;
+            this.playerScoreLbl.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.playerScoreLbl.Location = new System.Drawing.Point(404, 134);
+            this.playerScoreLbl.Name = "playerScoreLbl";
+            this.playerScoreLbl.Size = new System.Drawing.Size(89, 25);
+            this.playerScoreLbl.TabIndex = 6;
+            this.playerScoreLbl.Text = "Player: 0";
             // 
             // roundLbl
             // 
@@ -189,6 +179,17 @@ namespace rock_paper_sicssor
             // countDownTimer
             // 
             this.countDownTimer.Interval = 1000;
+            this.countDownTimer.Tick += new System.EventHandler(this.countDownTimer_Tick);
+            // 
+            // cpuScoreLabel
+            // 
+            this.cpuScoreLabel.AutoSize = true;
+            this.cpuScoreLabel.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.cpuScoreLabel.Location = new System.Drawing.Point(413, 202);
+            this.cpuScoreLabel.Name = "cpuScoreLabel";
+            this.cpuScoreLabel.Size = new System.Drawing.Size(71, 25);
+            this.cpuScoreLabel.TabIndex = 6;
+            this.cpuScoreLabel.Text = "CPU: 0";
             // 
             // Form1
             // 
@@ -200,8 +201,8 @@ namespace rock_paper_sicssor
             this.Controls.Add(this.cpuLbl);
             this.Controls.Add(this.winnerLbl);
             this.Controls.Add(this.roundLbl);
-            this.Controls.Add(this.countDownLbl);
-            this.Controls.Add(this.scoreLbl);
+            this.Controls.Add(this.cpuScoreLabel);
+            this.Controls.Add(this.playerScoreLbl);
             this.Controls.Add(this.playerLbl);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.newGameBtn);
@@ -226,13 +227,14 @@ namespace rock_paper_sicssor
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Label playerLbl;
         private System.Windows.Forms.Label cpuLbl;
-        private System.Windows.Forms.Label scoreLbl;
-        private System.Windows.Forms.Label countDownLbl;
+        private System.Windows.Forms.Label playerScoreLbl;
         private System.Windows.Forms.Label roundLbl;
         private System.Windows.Forms.Label winnerLbl;
         private System.Windows.Forms.PictureBox playerPicture;
         private System.Windows.Forms.PictureBox cpuPicture;
         private System.Windows.Forms.Timer countDownTimer;
+        private System.Windows.Forms.Label countDownLbl;
+        private System.Windows.Forms.Label cpuScoreLabel;
     }
 }
 
