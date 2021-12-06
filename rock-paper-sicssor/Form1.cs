@@ -1,4 +1,15 @@
-﻿using System;
+﻿/*
+ * Program Author: Yagnasri Vintha
+ * Assignment: Rock Paper Scissor
+ * ID: W10125181
+ * 
+ * Description:
+ *  Game form: 
+ *      Controls for Rock Paper Scissor,
+ *      Game logic between player and computer
+ */
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -70,7 +81,7 @@ namespace rock_paper_sicssor
 
         private void computerTurn()
         {
-            if (this.noOfRounds == 3)
+            if (this.gameCompleted)
             {
                 return;
             }

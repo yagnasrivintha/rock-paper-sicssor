@@ -1,3 +1,12 @@
+/*
+ * Program Author: Yagnasri Vintha
+ * Assignment: Rock Paper Scissor
+ * ID: W10125181
+ * 
+ * Description:
+ *  Program.cs
+ */
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
