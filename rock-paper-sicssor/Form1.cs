@@ -35,15 +35,16 @@ namespace rock_paper_sicssor
 
         private void initializeGame()
         {
-            this.noOfRounds = 3;
+            this.noOfRounds = 0;
             this.gameCompleted = false;
-            this.countDownTimer.Enabled = true;
             this.playerChoice = "none";
             this.cpuChoice = "none";
             this.playerScore = this.cpuScore = 0;
+            this.roundLbl.Text = "Round: 0/3";
 
             this.playerScoreLbl.Text = "Player: " + this.playerScore;
             this.cpuScoreLabel.Text = "CPU: " + this.playerScore;
+            this.winnerLbl.Text = "";
         }
 
         private void rockBtn_Click(object sender, EventArgs e)
@@ -69,7 +70,7 @@ namespace rock_paper_sicssor
 
         private void computerTurn()
         {
-            if (this.noOfRounds == 0)
+            if (this.noOfRounds == 3)
             {
                 return;
             }
@@ -99,7 +100,7 @@ namespace rock_paper_sicssor
                 || (playerChoice == "paper" && cpuChoice == "scissor"))
             {
                 this.cpuScore++;
-                this.noOfRounds--;
+                this.noOfRounds++;
 
                 this.cpuScoreLabel.Text = "CPU: " + this.cpuScore;
                 this.winnerLbl.Text = "CPU Wins!";
@@ -109,21 +110,22 @@ namespace rock_paper_sicssor
                 || (playerChoice == "paper" && cpuChoice == "rock"))
             {
                 this.playerScore++;
-                this.noOfRounds--;
+                this.noOfRounds++;
 
                 this.playerScoreLbl.Text = "Player: " + this.playerScore;
                 this.winnerLbl.Text = "Player Wins!";
             }
             else if (playerChoice == cpuChoice)
             {
-                this.noOfRounds--;
+                this.noOfRounds++;
                 this.winnerLbl.Text = "Draw!";
             }
+            this.roundLbl.Text = "Round: " + this.noOfRounds + "/3";
         }
 
         private void checkIfGameCompleted()
         {
-            if (this.noOfRounds == 0)
+            if (this.noOfRounds == 3)
             {
                 this.gameCompleted = true;
                 if (this.playerScore > this.cpuScore)

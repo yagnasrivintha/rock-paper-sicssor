@@ -138,9 +138,9 @@ namespace rock_paper_sicssor
             this.roundLbl.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.roundLbl.Location = new System.Drawing.Point(402, 218);
             this.roundLbl.Name = "roundLbl";
-            this.roundLbl.Size = new System.Drawing.Size(93, 25);
+            this.roundLbl.Size = new System.Drawing.Size(112, 25);
             this.roundLbl.TabIndex = 6;
-            this.roundLbl.Text = "Round: 3";
+            this.roundLbl.Text = "Round: 1/3";
             // 
             // winnerLbl
             // 
