@@ -29,7 +29,6 @@ namespace rock_paper_sicssor
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.rockBtn = new System.Windows.Forms.Button();
             this.paperBtn = new System.Windows.Forms.Button();
             this.scissorBtn = new System.Windows.Forms.Button();
@@ -42,7 +41,6 @@ namespace rock_paper_sicssor
             this.winnerLbl = new System.Windows.Forms.Label();
             this.playerPicture = new System.Windows.Forms.PictureBox();
             this.cpuPicture = new System.Windows.Forms.PictureBox();
-            this.countDownTimer = new System.Windows.Forms.Timer(this.components);
             this.cpuScoreLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.playerPicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cpuPicture)).BeginInit();
@@ -51,7 +49,7 @@ namespace rock_paper_sicssor
             // rockBtn
             // 
             this.rockBtn.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.rockBtn.Location = new System.Drawing.Point(44, 134);
+            this.rockBtn.Location = new System.Drawing.Point(42, 60);
             this.rockBtn.Name = "rockBtn";
             this.rockBtn.Size = new System.Drawing.Size(74, 25);
             this.rockBtn.TabIndex = 0;
@@ -62,7 +60,7 @@ namespace rock_paper_sicssor
             // paperBtn
             // 
             this.paperBtn.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.paperBtn.Location = new System.Drawing.Point(44, 183);
+            this.paperBtn.Location = new System.Drawing.Point(42, 109);
             this.paperBtn.Name = "paperBtn";
             this.paperBtn.Size = new System.Drawing.Size(74, 25);
             this.paperBtn.TabIndex = 1;
@@ -73,7 +71,7 @@ namespace rock_paper_sicssor
             // scissorBtn
             // 
             this.scissorBtn.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.scissorBtn.Location = new System.Drawing.Point(44, 234);
+            this.scissorBtn.Location = new System.Drawing.Point(42, 160);
             this.scissorBtn.Name = "scissorBtn";
             this.scissorBtn.Size = new System.Drawing.Size(74, 25);
             this.scissorBtn.TabIndex = 2;
@@ -128,7 +126,7 @@ namespace rock_paper_sicssor
             // 
             this.playerScoreLbl.AutoSize = true;
             this.playerScoreLbl.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.playerScoreLbl.Location = new System.Drawing.Point(404, 134);
+            this.playerScoreLbl.Location = new System.Drawing.Point(402, 60);
             this.playerScoreLbl.Name = "playerScoreLbl";
             this.playerScoreLbl.Size = new System.Drawing.Size(89, 25);
             this.playerScoreLbl.TabIndex = 6;
@@ -138,7 +136,7 @@ namespace rock_paper_sicssor
             // 
             this.roundLbl.AutoSize = true;
             this.roundLbl.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.roundLbl.Location = new System.Drawing.Point(413, 310);
+            this.roundLbl.Location = new System.Drawing.Point(402, 218);
             this.roundLbl.Name = "roundLbl";
             this.roundLbl.Size = new System.Drawing.Size(93, 25);
             this.roundLbl.TabIndex = 6;
@@ -148,7 +146,7 @@ namespace rock_paper_sicssor
             // 
             this.winnerLbl.AutoSize = true;
             this.winnerLbl.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.winnerLbl.Location = new System.Drawing.Point(234, 374);
+            this.winnerLbl.Location = new System.Drawing.Point(101, 297);
             this.winnerLbl.Name = "winnerLbl";
             this.winnerLbl.Size = new System.Drawing.Size(202, 37);
             this.winnerLbl.TabIndex = 6;
@@ -158,7 +156,7 @@ namespace rock_paper_sicssor
             // 
             this.playerPicture.BackgroundImage = global::rock_paper_sicssor.Properties.Resources.qq;
             this.playerPicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.playerPicture.Location = new System.Drawing.Point(169, 106);
+            this.playerPicture.Location = new System.Drawing.Point(167, 32);
             this.playerPicture.Name = "playerPicture";
             this.playerPicture.Size = new System.Drawing.Size(191, 164);
             this.playerPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -169,23 +167,18 @@ namespace rock_paper_sicssor
             // 
             this.cpuPicture.BackgroundImage = global::rock_paper_sicssor.Properties.Resources.qq;
             this.cpuPicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.cpuPicture.Location = new System.Drawing.Point(538, 106);
+            this.cpuPicture.Location = new System.Drawing.Point(536, 32);
             this.cpuPicture.Name = "cpuPicture";
             this.cpuPicture.Size = new System.Drawing.Size(191, 164);
             this.cpuPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.cpuPicture.TabIndex = 7;
             this.cpuPicture.TabStop = false;
             // 
-            // countDownTimer
-            // 
-            this.countDownTimer.Interval = 1000;
-            this.countDownTimer.Tick += new System.EventHandler(this.countDownTimer_Tick);
-            // 
             // cpuScoreLabel
             // 
             this.cpuScoreLabel.AutoSize = true;
             this.cpuScoreLabel.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.cpuScoreLabel.Location = new System.Drawing.Point(413, 202);
+            this.cpuScoreLabel.Location = new System.Drawing.Point(411, 128);
             this.cpuScoreLabel.Name = "cpuScoreLabel";
             this.cpuScoreLabel.Size = new System.Drawing.Size(71, 25);
             this.cpuScoreLabel.TabIndex = 6;
@@ -232,7 +225,6 @@ namespace rock_paper_sicssor
         private System.Windows.Forms.Label winnerLbl;
         private System.Windows.Forms.PictureBox playerPicture;
         private System.Windows.Forms.PictureBox cpuPicture;
-        private System.Windows.Forms.Timer countDownTimer;
         private System.Windows.Forms.Label countDownLbl;
         private System.Windows.Forms.Label cpuScoreLabel;
     }

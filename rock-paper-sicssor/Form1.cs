@@ -150,10 +150,5 @@ namespace rock_paper_sicssor
         {
             Application.Exit();
         }
-
-        private void countDownTimer_Tick(object sender, EventArgs e)
-        {
-
-        }
     }
 }
